@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenCommute: Smart Travel Recommender</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>GreenCommute</h1>
+    <p class="tagline">Smart, eco-friendly route recommendations</p>
+    <form id="routeForm">
+      <div class="row">
+        <label>Source</label>
+        <input type="text" id="source" placeholder="e.g., Shivaji Nagar" required />
+      </div>
+      <div class="row">
+        <label>Destination</label>
+        <input type="text" id="destination" placeholder="e.g., FC Road" required />
+      </div>
+      <button type="submit">Recommend Routes</button>
+    </form>
+
+    <section id="results" class="card hidden">
+      <h2>Recommendations</h2>
+      <div id="recommended" class="recommended"></div>
+      <div id="options" class="options"></div>
+    </section>
+
+    <section id="leaderboard" class="card hidden">
+      <h2>Leaderboard</h2>
+      <ul id="leaders"></ul>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
